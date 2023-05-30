@@ -7,3 +7,26 @@ console.log(users);
 
 // Append the katas to this element:
 const main = document.querySelector("main");
+
+const printKata = function  (kataNumber, object) {
+    // For the usage of the DETAILS and SUMMARY tags
+    // in HTML, see: http://mdn.io/details-element
+    const detailsElement = document.createElement('details')
+    main.append(detailsElement)
+    //
+    const summaryElement = document.createElement('summary')
+    summaryElement.append("KATA " + kataNumber)
+    detailsElement.append(summaryElement)
+    //
+    // http://mdn.io/json.stringify
+    const stringifiedObject = JSON.stringify(object)
+    detailsElement.append(stringifiedObject)
+}
+
+// Kata 0
+const greenEyes1 = users.filter(user => user.eyeColor === "green")
+printKata(0, greenEyes1);  
+
+// Kata 1
+const activeUsers = users.filter(user => user.isActive === true);
+printKata(1, activeUsers);
