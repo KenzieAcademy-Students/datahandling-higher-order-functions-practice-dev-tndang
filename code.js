@@ -30,3 +30,7 @@ printKata(0, greenEyes1);
 // Kata 1
 const activeUsers = users.filter(user => user.isActive === true);
 printKata(1, activeUsers);
+
+// Kata 2
+const userEmails = users.map(user => user.email);
+printKata(2, userEmails);
