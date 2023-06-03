@@ -34,3 +34,7 @@ printKata(1, activeUsers);
 // Kata 2
 const userEmails = users.map(user => user.email);
 printKata(2, userEmails);
+
+// Kata 3
+const hasOvation = users.some(user => user.company === "OVATION");
+printKata(3, hasOvation);
