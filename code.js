@@ -40,5 +40,9 @@ const hasOvation = users.some(user => user.company === "OVATION");
 printKata(3, hasOvation);
 
 // Kata 4 
-const over28 = users.find(user => user.age === 28);
+const over28 = users.find(user => user.age > 28);
 printKata(4, over28);
+
+// Kata 5
+const active28Plus = users.filter(user => user.isActive === true).find(user => user.age > 28);
+printKata(5, active28Plus);
