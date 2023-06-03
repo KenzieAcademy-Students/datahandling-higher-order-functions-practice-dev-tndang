@@ -46,3 +46,7 @@ printKata(4, over28);
 // Kata 5
 const active28Plus = users.filter(user => user.isActive === true).find(user => user.age > 28);
 printKata(5, active28Plus);
+
+// Kata 6
+const zencoBalance = users.filter(user => user.company === "ZENCO").map(user => user.balance);
+printKata(6, zencoBalance);
