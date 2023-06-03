@@ -50,3 +50,7 @@ printKata(5, active28Plus);
 // Kata 6
 const zencoBalance = users.filter(user => user.company === "ZENCO").map(user => user.balance);
 printKata(6, zencoBalance);
+
+// Kata 7
+const fugiatAges = users.filter(user => user.tags.includes("fugiat")).map(user => user.age);
+printKata(7, fugiatAges);
