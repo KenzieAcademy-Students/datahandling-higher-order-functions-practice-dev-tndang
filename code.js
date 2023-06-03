@@ -38,3 +38,7 @@ printKata(2, userEmails);
 // Kata 3
 const hasOvation = users.some(user => user.company === "OVATION");
 printKata(3, hasOvation);
+
+// Kata 4 
+const over28 = users.find(user => user.age === 28);
+printKata(4, over28);
